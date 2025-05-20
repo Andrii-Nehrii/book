@@ -1,19 +1,51 @@
-.container{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 40px;
-}
-
-.container div {
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container p {
+/* Тёмный фон и светлый текст */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #1e1e1e, #2d2d2d);
+  margin: 0;
+  padding: 20px;
+  color: #f0f0f0;
   text-align: center;
-} 
+}
+
+/* Заголовок */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #61dafb;
+  text-shadow: 0 0 5px #0ff;
+}
+
+/* Кнопка обновления */
+#refreshButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0e76a8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #0ff3;
+}
+
+#refreshButton:hover {
+  background-color: #095d85;
+}
+
+/* Блок с прогнозом */
+#content {
+  max-width: 90vw;
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  overflow-x: auto;
+  text-align: left;
+  color: #ccf;
+  border: 1px solid #444;
+}
